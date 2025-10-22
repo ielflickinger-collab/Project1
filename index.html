@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q1 Project</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+  	/*Whoever's reading this,
+  	I hope you're having a great day!*/
+
+ body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #fff;
+  color: #333;
+}
+
+ img{
+ 	width: 250px;
+ 	height: 250px;
+ }
+
+ h3{
+ 	color: white;
+ 	text-align: center;
+ 	font-size: 25px;
+ }
+
+ thingy1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  padding: 10px 40px;
+}
+
+thingy2 {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+thingy3 {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.hellow {
+  text-align: center;
+  padding: 40px 0;
+  background: #d1eec0;
+}
+
+.hellow .avatar{
+  width: 100px;
+  border-radius: 50%;
+}
+
+.hellow span{
+  color: #0094ff;
+}
+
+.box {
+  text-align: center;
+  margin: 40px;
+}
+
+.box h2{
+  background: #d1eec0;
+  padding: 10px;
+}
+
+.work{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+
+.work img{
+  width: 450px;
+  border: 2px dotted black;
+  border-radius: 10px;
+}
+
+form{
+  background: #f3f3f3;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+input, select, textarea{
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button{
+  width: 100%;
+  padding: 10px;
+  background: #2e5bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d3fcc;
+}
+
+
+footer{
+  text-align: center;
+  background: #111;
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/*Godbless!!!*/
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <thingy1>
+      <img src="AG.jpg"> 
+      <h3>
+      	Philippians 4:6-7 <br> Don’t worry about anything; instead, pray about everything. <br>
+       Tell God what you need, and thank him for all he has done.
+      </h3>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#works">My Works</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+    </thingy2>
+  </header>
+
+  <section class="hellow">
+    <h1><span>Reizen Azekiel</span></h1>
+    <p>Currently learning game development</p>
+  </section>
+
+  <section id="about" class="box">
+    <h2>About Me</h2>
+    <p>Hello! I'm Reizen Azekiel, Az for short. I'm currently starting a small game company among friends. <br>
+    I've always loved the idea of creating my own personal stories and worlds, <br>
+    and so, when I was younger, I discovered I'm able to create my own games, which brought me to where I am now</p>
+  </section>
+
+  <section id="works" class="box">
+    <h2>My Works</h2>
+
+    <div class="work">
+      <img src="SB.png" alt="Slambook">
+      <div>
+        <ul>
+          <li>✔ HTML & CSS Projects</li>
+          <li>✔ Personal Blog</li>
+          <li>✔ School Portfolio</li>
+        </ul>
+        <p><em>My Personal Scrapbook</em></p>
+      </div>
+    </div>
+
+    <div class="work">
+      <img src="FVM.png" alt=Favorite-Movie-Collection>
+      <div>
+        <ul>
+          <li>✔ HTML & CSS Projects</li>
+          <li>✔ HTML Forms</li>
+          <li>✔ Links and Images</li>
+        </ul>
+        <p><em>My Top 3 Best Movies</em></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="box">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <div class="radio-group">
+        <label>How did you find me?</label><br> <br>
+        Facebook <input type="radio" name="find" value="Facebook"> <br> <br>
+        Google <input type="radio" name="find" value="Google"> <br> <br>
+        Friends <input type="radio" name="find" value="Friends"> <br> <br>
+      </div>
+
+      <div class="CG">
+        <label>Services Interested In:</label><br> <br>
+        Web Design <input type="checkbox"> <br> <br>
+        Graphic Design <input type="checkbox"> <br> <br>
+        Robotics <input type="checkbox"> <br> <br>
+      </div>
+
+      <label>Rate my Portfolio:</label>
+      <select>
+        <option>--Select Rating--</option>
+        <option>Excellent</option>
+        <option>Good</option>
+        <option>Fair</option>
+      </select>
+
+      <textarea placeholder="Any feedback?"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Reizen Azekiel E. Flickiger. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
